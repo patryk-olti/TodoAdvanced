@@ -1,0 +1,13 @@
+$backgroundColor: rgb(161, 186, 255);
+
+.LoginPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Montserrat', sans-serif;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: $backgroundColor;
+}

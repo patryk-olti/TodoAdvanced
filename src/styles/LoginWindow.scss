@@ -1,0 +1,34 @@
+$backgroundColor: rgb(147, 176, 253);
+
+.LoginWindow{
+    padding: 30px;
+
+    border: 2px solid black;
+
+    background-color: $backgroundColor;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .Register{
+            margin-bottom: 10px;
+            font-size: 14px;
+            letter-spacing: 1px;
+
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
