@@ -39,7 +39,10 @@ const ButtonClick = styled.button`
 const Button = (props) => {
 
     return(
-        <ButtonClick back={props.back}>{props.name}</ButtonClick>
+        <ButtonClick 
+            back={props.back}>
+        {props.name}
+        </ButtonClick>
     )
 }
 

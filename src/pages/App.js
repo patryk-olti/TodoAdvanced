@@ -21,19 +21,13 @@ class App extends React.Component {
       <div className="App">
 
         <Switch>
-          <Route path="/" exact component={LoginPage} />
+          <Route path="/" exact render={() => <LoginPage />} />
           <Route path="/register" component={RegisterPage} />
 
           <Route component={ErrorPage} />
         </Switch>
-        
-        
-
-
-
       </div>
     </Router>
-    
   )}
 }
 

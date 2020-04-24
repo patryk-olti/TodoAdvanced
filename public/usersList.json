@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Patryk",
+            "surname": "Oltuch",
+            "login": "olti",
+            "password": "qwerty"
+        },
+        {
+            "id": 2,
+            "name": "Adam",
+            "surname": "Nowak",
+            "login": "adas",
+            "password": "qwerty"
+        }
+    ]
+}

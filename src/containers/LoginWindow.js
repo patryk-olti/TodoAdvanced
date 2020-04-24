@@ -5,28 +5,50 @@ import Button from "../components/Button";
 
 import "../styles/LoginRegisterWindow.scss";
 
-export default function LoginWindow(){
+class LoginWindow extends React.Component{
 
-    return(
-        <div className="Window">
+    state = {
+        users: [],
+        permission: false,
+        loginTemporary: null,
+        passwordTemporary: null
+    }
 
-            <div className="WindowForm">
+    componentDidMount(){
+        fetch('usersList.json')
+        .then(response => response.json())
+        .then(data => {
+            this.setState({
+                users: data.users
+            })
+        })
+    }
 
-            <form className="Form">
-                <div className="form">
-                    <LoginBox name="login" type="text"/>
-                    <LoginBox name="hasło" type="password"/>
+    render(){
+        console.log(this.state.users);
+        console.log(`zezwolenie: ${this.state.permission}`)
+
+        return(
+            <div className="Window">
+                <div className="WindowForm">
+                    <form className="Form">
+                        <div className="form">
+                            <LoginBox name="login" type="text" />
+                            <LoginBox name="hasło" type="password"/>
+                        </div>
+                        <Button name="zaloguj" />
+
+                        <span className="Register">
+                            <Link to="register">dołącz do nas!</Link>
+                        </span>
+                    </form>
+
+                    <div className="LoginMessage">
+                        <span></span>
+                    </div>
                 </div>
-                <Button name="zaloguj"/>
-                <span className="Register">
-                    <Link to="register">dołącz do nas!</Link>
-                </span>
-            </form>
-
-            <div className="LoginMessage">
-                <span> </span>
             </div>
-            </div>
-        </div>
-    )
+    )}
 }
+
+export default LoginWindow;
