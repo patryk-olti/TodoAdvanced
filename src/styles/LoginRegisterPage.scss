@@ -2,6 +2,7 @@ $backgroundColor: rgb(161, 186, 255);
 
 .Page{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 

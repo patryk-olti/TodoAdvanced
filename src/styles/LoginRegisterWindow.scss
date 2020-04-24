@@ -1,33 +1,36 @@
 $backgroundColor: rgb(147, 176, 253);
 
 .Window{
-    padding: 30px;
+    .WindowForm{
 
-    border: 2px solid black;
-
-    background-color: $backgroundColor;
-
-    form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .form{
+        padding: 30px;
+    
+        border: 2px solid black;
+    
+        background-color: $backgroundColor;
+    
+        form{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .Register{
-            margin-bottom: 10px;
-            font-size: 14px;
-            letter-spacing: 1px;
-
-            cursor: pointer;
-            transition: 0.2s;
-
-            &:hover{
-                color: red;
+            align-items: center;
+    
+            .form{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+    
+            .Register{
+                margin-bottom: 10px;
+                font-size: 14px;
+                letter-spacing: 1px;
+    
+                cursor: pointer;
+                transition: 0.2s;
+    
+                &:hover{
+                    color: red;
+                }
             }
         }
     }

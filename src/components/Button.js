@@ -5,8 +5,8 @@ const ButtonClick = styled.button`
     position: relative;
     margin: 15px 0;
     padding: 10px 30px;
-
-    font-size: 18px;
+    font-size: ${props => (props.back ? "12px" : "18px")};
+    
     font-weight: 700;
     letter-spacing: 2px;
     color: rgb(116, 139, 9);
@@ -39,7 +39,7 @@ const ButtonClick = styled.button`
 const Button = (props) => {
 
     return(
-        <ButtonClick>{props.name}</ButtonClick>
+        <ButtonClick back={props.back}>{props.name}</ButtonClick>
     )
 }
 

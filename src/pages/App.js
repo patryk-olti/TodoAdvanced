@@ -1,8 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
+
+import ErrorPage from './ErrorPage';
 
 import '../styles/App.scss';
 
@@ -17,7 +19,15 @@ class App extends React.Component {
     return (
     <Router>
       <div className="App">
-        <RegisterPage />
+
+        <Switch>
+          <Route path="/" exact component={LoginPage} />
+          <Route path="/register" component={RegisterPage} />
+
+          <Route component={ErrorPage} />
+        </Switch>
+        
+        
 
 
 
