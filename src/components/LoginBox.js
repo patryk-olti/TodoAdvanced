@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/LoginBox.scss";
+import "../styles/LoginRegisterBox.scss";
 
 const LoginBox = (props) => {
 

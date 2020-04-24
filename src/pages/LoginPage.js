@@ -2,13 +2,12 @@ import React from "react";
 
 import LoginWindow from '../containers/LoginWindow';
 
-import "../styles/LoginPage.scss";
+import "../styles/LoginRegisterPage.scss";
 
 const LoginPage = () => {
 
-
     return(
-        <div className="LoginPage">
+        <div className="Page">
             <LoginWindow />
         </div>
     )
