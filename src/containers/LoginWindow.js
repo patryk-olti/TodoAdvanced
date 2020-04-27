@@ -65,7 +65,7 @@ class LoginWindow extends React.Component{
     render(){
         //console.log(this.state.users);
         //console.log(`zezwolenie: ${this.state.permission}`)
-        console.log(this.props.perm);
+        //console.log(this.props.perm);
 
         return(
             <div className="Window"> 
