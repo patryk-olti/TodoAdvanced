@@ -40,7 +40,10 @@ const Button = (props) => {
 
     return(
         <ButtonClick 
-            back={props.back}>
+            back={props.back ? props.back : null}
+            onClick={props.handleClick ? props.handleClick : null}
+            
+        >
         {props.name}
         </ButtonClick>
     )

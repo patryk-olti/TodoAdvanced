@@ -6,7 +6,7 @@ const LoginBox = (props) => {
     return(
         <label>
             <span>{props.name}: </span>
-            <input type={props.type} placeholder={`${props.name}...`}/>
+            <input type={props.type} placeholder={`${props.name}...`} value={props.value} onChange={props.handleChange} />
         </label>
     )
 }
