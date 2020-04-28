@@ -13,7 +13,7 @@ import '../styles/App.scss';
 class App extends React.Component {
 
   state = {
-    permission: false
+    permission: true
   }
 
   changePerm = () => {

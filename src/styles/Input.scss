@@ -1,0 +1,19 @@
+.input{
+    display: flex;
+
+    border: 1px solid black;
+
+    input{
+        padding: 5px 10px;
+        font-size: 20px;
+        border: none;
+    }
+
+    button{
+        padding: 5px 10px;
+        font-size: 20px;
+        border: none;
+        background-color: white;
+        border-left: 1px solid black;
+    }
+}

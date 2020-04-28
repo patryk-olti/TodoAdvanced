@@ -1,0 +1,109 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "name": "C++",
+            "type": "low-level",
+            "date": "30.09.2012",
+            "author": "oltix",
+            "completed": true
+        },
+        {
+            "id": 2,
+            "name": "HTML 5",
+            "type": "web",
+            "date": "30.03.2018",
+            "author": "oltix",
+            "completed": true
+        },
+        {
+            "id": 3,
+            "name": "CSS 3",
+            "type": "web",
+            "date": "20.04.2018",
+            "author": "oltix",
+            "completed": true
+        },
+        {
+            "id": 4,
+            "name": "SASS",
+            "type": "web",
+            "date": "05.06.2018",
+            "author": "oltix",
+            "completed": true
+        },
+        {
+            "id": 5,
+            "name": "git-basic",
+            "type": "control-version",
+            "date": "13.07.2018",
+            "author": "oltix",
+            "completed": true
+        },
+        {
+            "id": 6,
+            "name": "flex",
+            "type": "web",
+            "date": "22.08.2018",
+            "author": "oltix",
+            "completed": true
+        },
+        {
+            "id": 7,
+            "name": "gsap",
+            "type": "web",
+            "date": "30.10.2018",
+            "author": "oltix",
+            "completed": true
+        },
+        {
+            "id": 8,
+            "name": "javascript ES6",
+            "type": "web",
+            "date": "03.01.2019",
+            "author": "oltix",
+            "completed": true
+        },
+        {
+            "id": 9,
+            "name": "React",
+            "type": "web",
+            "date": "22.04.2019",
+            "author": "oltix",
+            "completed": true
+        },
+        {
+            "id": 10,
+            "name": "SQL",
+            "type": "web",
+            "date": "11.07.2019",
+            "author": "oltix",
+            "completed": true
+        },
+        {
+            "id": 11,
+            "name": "Redux",
+            "type": "web",
+            "date": "13.03.2020",
+            "author": "oltix",
+            "completed": false
+        },
+        {
+            "id": 12,
+            "name": "Bootstrap",
+            "type": "web",
+            "date": "20.05.2020",
+            "author": "oltix",
+            "completed": false
+        },
+        {
+            "id": 13,
+            "name": "php",
+            "type": "web",
+            "date": "30.07.2020",
+            "author": "oltix",
+            "completed": false
+        }
+
+    ]
+}

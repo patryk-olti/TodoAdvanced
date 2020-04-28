@@ -1,0 +1,24 @@
+$backgroundColor: rgb(161, 186, 255);
+
+.HomePage{
+
+    font-family: 'Montserrat', sans-serif;
+
+    width: 100vw;
+    min-height: 100vh;
+    background-color: $backgroundColor;
+
+    .Content{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+
+        .ContentBox{
+            max-width: 1600px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -38,26 +38,6 @@ class RegisterWindow extends React.Component{
         })
     }
 
-    handleClick(){
-
-        let newObj = {
-            "id": 5,
-            "name": this.state.nameTemporary,
-            "surname": this.state.surnameTemporary,
-            "login": this.state.loginTemporary,
-            "password": this.state.passwordTemporary
-        }
-
-        fetch('usersList.json')
-        .then(response => response.json())
-        .then(data => {
-            this.setState({
-                users: data.users
-            })
-        })
-
-    }
-
     render(){
         return(
             <div className="Window">

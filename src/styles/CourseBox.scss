@@ -1,0 +1,53 @@
+$boxActiveLight: rgb(44, 219, 38);
+$boxActiveHover: rgb(20, 184, 14);
+$boxDisactiveLight: rgb(255, 230, 0);
+$boxDisactiveHover: rgb(233, 210, 0);
+
+div.CourseBoxActive{
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+    border: 3px solid black;
+    border-radius: 5%;
+    background-color: $boxActiveLight;
+    transition: 0.5s;
+
+    &:hover{
+        border: 3px solid rgb(255, 0, 0);
+        background-color: $boxActiveHover;
+        cursor: pointer;
+    }
+
+    span{
+        margin-top: 10px;
+    }
+
+    span.title{
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    span.date{
+        font-size: 12px;
+    }
+
+    span.author{
+        font-size: 16px;
+    }
+}
+
+div.CourseBoxDisactive{
+    background-color: $boxDisactiveLight;
+
+    &:hover{
+        background-color: $boxDisactiveHover;
+    }
+}
+
